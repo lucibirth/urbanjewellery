@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💎</text></svg>">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Urban Store — contemporary women's jewelry for modern US customers, including necklaces, earrings, bracelets and rings.">
+  <title>Urban Store | Women's Jewelry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+    <a class="logo" href="index.html">Urban Store</a>
+    <nav>
+      <a href="#product">Shop</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#suggested">Discover More</a>
+      <a href="#footer">Info</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-section" id="product">
+      <div class="product-visuals">
+        <div class="main-image-container">
+          <img id="mainImage" src="assets/eternal-heart-necklace-main.jpg" alt="Eternal Heart Necklace">
+        </div>
+        <div class="product-thumbnails">
+          <button class="thumbnail active"><img src="assets/eternal-heart-necklace-main.jpg" alt="Eternal Heart Necklace front view"></button>
+          <button class="thumbnail"><img src="assets/eternal-heart-necklace-detail.jpg" alt="Eternal Heart Necklace detail view"></button>
+          <button class="thumbnail" style="display: none;"><img src="assets/eternal-heart-necklace-alt.jpg" alt="Eternal Heart Necklace worn view"></button>
+        </div>
+      </div>
+
+      <div class="product-details">
+        <div class="eyebrow">Women's Jewelry • Fine Collection</div>
+        <h1>Aura Heart Pendant Necklace</h1>
+        <div class="rating"><span>★★★★★</span> <small>4.9 · 128 reviews</small></div>
+        <div class="price">$79.00 <del>$109.00</del></div>
+        <p class="description">An exquisite statement of love and elegance. The Aura Heart Pendant features a brilliant-cut center stone encased in a delicate halo of micro-pavé crystals. Hand-polished in radiant 14k rose gold plating, this timeless necklace adds a touch of sophistication to any ensemble.</p>
+        <div class="option-group" style="display: none;">
+          <strong>Finish: <span id="selectedColor">Rose Gold</span></strong>
+          <div class="colors">
+            <button class="color-btn color-tortoise active" data-color="Rose Gold" aria-label="Rose Gold"></button>
+            <button class="color-btn color-black" data-color="Gold" aria-label="Gold"></button>
+            <button class="color-btn color-champagne" data-color="Silver" aria-label="Silver"></button>
+          </div>
+        </div>
+
+        <div class="option-group">
+          <div class="quantity-header">
+            <strong>Quantity</strong>
+            <div class="stock-status in-stock"><span class="dot"></span> In Stock</div>
+          </div>
+          <div class="quantity-selector"><button id="minus">−</button><span id="qty">1</span><button id="plus">+</button></div>
+        </div>
+
+        <button class="checkout-btn" id="checkout">Proceed to Checkout</button>
+      </div>
+    </section>
+
+    <section class="accordion-section reveal-on-scroll">
+      <div class="accordion-container">
+        <div class="accordion">
+          <details class="accordion-item" open>
+            <summary>Product Features <span class="icon">+</span></summary>
+            <div class="accordion-content">
+              <p>Designed around a delicate silhouette with brilliant sparkle for modern everyday styling.</p>
+              <ul>
+                <li>Brilliant-cut cubic zirconia center stone</li>
+                <li>Micro-pavé crystal halo setting</li>
+                <li>Hand-polished 14k rose gold plating</li>
+                <li>Includes a premium velvet presentation box</li>
+              </ul>
+            </div>
+          </details>
+          <details class="accordion-item">
+            <summary>Materials & Fit <span class="icon">+</span></summary>
+            <div class="accordion-content">
+              <p>A lightweight, comfortable necklace designed to sit perfectly at the neckline.</p>
+              <ul>
+                <li>Base metal: Premium jeweler's brass</li>
+                <li>Plating: 14k Rose Gold</li>
+                <li>Adjustable chain: 18" with a 2" extender (20" total)</li>
+                <li>Lobster clasp closure for secure wear</li>
+              </ul>
+            </div>
+          </details>
+          <details class="accordion-item">
+            <summary>Shipping & Returns <span class="icon">+</span></summary>
+            <div class="accordion-content">
+              <p>US shipping options and estimated delivery times are presented before a future purchase is completed.</p>
+              <p>We offer a 30-day return window for eligible items in unused condition. <a href="returns.html" style="text-decoration:underline;color:var(--text-main);">View return policy</a>.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section reveal-on-scroll" id="reviews">
+      <div class="reviews-container">
+        <div class="reviews-summary">
+          <span>Community</span>
+          <h2>Loved for Everyday Elegance</h2>
+          <div class="rating-score">
+            <strong>4.9</strong>
+            <div class="large-stars">★★★★★</div>
+            <p>Based on 128 customer reviews</p>
+          </div>
+          <div class="rating-bars">
+            <div class="rating-row"><span>5</span><div class="bar-bg"><div class="bar-fill" style="width:86%"></div></div><small>110</small></div>
+            <div class="rating-row"><span>4</span><div class="bar-bg"><div class="bar-fill" style="width:10%"></div></div><small>13</small></div>
+            <div class="rating-row"><span>3</span><div class="bar-bg"><div class="bar-fill" style="width:4%"></div></div><small>5</small></div>
+            <div class="rating-row"><span>2</span><div class="bar-bg"><div class="bar-fill" style="width:0%"></div></div><small>0</small></div>
+            <div class="rating-row"><span>1</span><div class="bar-bg"><div class="bar-fill" style="width:0%"></div></div><small>0</small></div>
+          </div>
+        </div>
+
+        <div class="review-list">
+          <article class="review-card"><div class="review-top"><div class="review-author-info"><strong>Emily R.</strong><small>Customer</small></div><div class="review-stars">★★★★★</div></div><p class="review-text">“The heart pendant is delicate without feeling too small. It has become one of my favorite pieces for everyday outfits.”</p></article>
+          <article class="review-card"><div class="review-top"><div class="review-author-info"><strong>Madison T.</strong><small>Customer</small></div><div class="review-stars">★★★★★</div></div><p class="review-text">“Beautiful rose-gold tone and a very easy length to style with different necklines. It feels polished and feminine.”</p></article>
+          <article class="review-card"><div class="review-top"><div class="review-author-info"><strong>Lauren C.</strong><small>Customer</small></div><div class="review-stars">★★★★☆</div></div><p class="review-text">“A lovely gift-style necklace with a classic design. The sparkle catches the light nicely.”</p></article>
+          <article class="review-card"><div class="review-top"><div class="review-author-info"><strong>Olivia M.</strong><small>Customer</small></div><div class="review-stars">★★★★★</div></div><p class="review-text">“Simple, elegant and easy to wear. I like that it works with both casual and dressier looks.”</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="suggested reveal-on-scroll" id="suggested">
+      <div class="section-heading"><span>Explore More</span><h2>Curated For You</h2></div>
+      <div class="slider-wrap">
+        <button class="slider-btn prev" id="prev">‹</button>
+        <div class="slider" id="slider">
+          <article class="slide"><img src="assets/classic-gold-hoops.jpg" alt="Classic Gold Hoops"><div><h3>Classic Gold Hoops</h3><p>Polished everyday hoops</p><b>$49.00</b></div></article>
+          <article class="slide"><img src="assets/tennis-bracelet.webp" alt="Tennis Bracelet"><div><h3>Tennis Bracelet</h3><p>Fine sparkle with a polished gold finish</p><b>$89.00</b></div></article>
+          <article class="slide"><img src="assets/pearl-drop-necklace.webp" alt="Pearl Drop Necklace"><div><h3>Pearl Drop Necklace</h3><p>Freshwater pearl with a delicate gold chain</p><b>$69.00</b></div></article>
+          <article class="slide"><img src="assets/solitaire-ring.jpg" alt="Classic Solitaire Ring"><div><h3>Classic Solitaire Ring</h3><p>Clean gold band with a brilliant center stone</p><b>$99.00</b></div></article>
+          <article class="slide"><img src="assets/chain-bracelet.jpg" alt="Dainty Gold Chain Bracelet"><div><h3>Dainty Gold Chain Bracelet</h3><p>Polished gold links for everyday styling</p><b>$59.00</b></div></article>
+        </div>
+        <button class="slider-btn next" id="next">›</button>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-grid">
+      <div><div class="footer-logo">Urban Store</div><p>Curating contemporary women's jewelry for modern wardrobes across the United States. Elegant pieces for everyday moments and special occasions.</p></div>
+      <div><h4>Information</h4><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms & Conditions</a><a href="returns.html">Return & Refund Policy</a></div>
+      <div><h4>Customer Care</h4><a href="#product">Shop Jewelry</a><a href="#suggested">Collections</a><button class="footer-contact" id="contactOpen">Contact Us</button></div>
+      <div><h4>Location</h4><p style="color: rgba(255,255,255,0.7); line-height: 1.8; margin: 0; font-size: 0.95rem;">1204 Fashion Ave, Suite 300<br>New York, NY 10001<br>United States</p></div>
+    </div>
+    <div class="copyright">© 2026 Urban Store. All rights reserved.</div>
+  </footer>
+
+  <div class="modal" id="contactModal">
+    <div class="modal-card contact-modal-card">
+      <button class="modal-x" id="contactClose" aria-label="Close">×</button>
+      <div id="contactFormView">
+        <div class="contact-header-text"><div class="contact-title-row"><div class="modal-icon">✉</div><h2>Get in Touch</h2></div><p>Have a question about jewelry, styling or your order? We're here to help.</p></div>
+        <div class="contact-split">
+          <div class="contact-info"><h3>Urban Store</h3><p>1204 Fashion Ave, Suite 300<br>New York, NY 10001<br>United States</p><h3>Contact</h3><p>Email: hello@urbanstore.com</p><h3>Hours</h3><p>Mon - Sat: 10:00 AM - 8:00 PM<br>Sunday: 12:00 PM - 6:00 PM</p></div>
+          <div class="contact-form-col"><form id="contactForm" novalidate>
+            <label>Full Name <span>*</span></label><input type="text" id="contactName" placeholder="Your full name" required><div class="field-error" id="nameError"></div>
+            <label>Email Address <span>*</span></label><input type="email" id="contactEmail" placeholder="you@example.com" required><div class="field-error" id="emailError"></div>
+            <label>Subject <span>*</span></label><input type="text" id="contactSubject" placeholder="How can we help?" required><div class="field-error" id="subjectError"></div>
+            <label>Message <span>*</span></label><textarea id="contactMessage" rows="4" placeholder="Write your message..." required></textarea><div class="field-error" id="messageError"></div>
+            <button type="submit" class="modal-action" style="width:100%">Send Message</button>
+          </form></div>
+        </div>
+      </div>
+      <div class="contact-success" id="contactSuccess"><div class="modal-icon">✓</div><h2>Message Sent Successfully!</h2><p>Thank you for reaching out to Urban Store. Our customer support team will reply shortly.</p><button class="modal-action" id="successClose">Close</button></div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal"><div class="modal-card"><div class="modal-icon">💎</div><h2>Checkout Unavailable</h2><p>Our secure checkout is undergoing scheduled maintenance and is currently unavailable. Please check back later to complete your purchase.</p><button class="modal-action" id="closeModal">Close</button></div></div>
+  <script src="assets/script.js"></script>
+</body>
+</html>
